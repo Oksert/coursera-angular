@@ -31,7 +31,7 @@
       this.narrowIt = function () {
         if (!ctrl.searchTerm) {
           ctrl.isEmpty = true;
-          return;
+          ctrl.searchTerm = '';
         }
         MenuSearchService.getMatchedMenuItems(ctrl.searchTerm).then(function (responseData) {
           ctrl.menu = responseData;
