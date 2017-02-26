@@ -1,0 +1,16 @@
+<form class="form-inline">
+
+    <div class="row col-md-10">
+        <input type="text" ng-model='$ctrl.newItem' placeholder="item" class="form-control col-md-3">
+        <input type="text" ng-model='$ctrl.amount' placeholder="quantity" class="form-control col-md-2">
+        <button ng-click='$ctrl.addItem($ctrl.newItem, $ctrl.amount)' class="btn btn-default">Add Item</button>
+    </div>
+    <div class="row col-md-4">
+        <ol class="list-group">
+            <li ng-repeat='item in $ctrl.items track by $index' ng-class="{'banned':$ctrl.isInBannedList(item)}" class="list-group-item">{{item}}
+                <span><button ng-click='$ctrl.deleteItem($index)' class="btn btn-default">Delete Item</button></span>
+
+            </li>
+        </ol>
+    </div>
+</form>

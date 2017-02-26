@@ -1,0 +1,5 @@
+<ol>
+  <li ng-repeat = 'item in $ctrl.items track by $index'>{{item}}
+    <span><button ng-click='$ctrl.deleteItem($index)'>Delete Item</button></span>
+  </li>
+</ol>
