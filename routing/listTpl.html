@@ -1,0 +1,5 @@
+<ul>
+    <li ng-repeat='item in $ctrl.data' ui-sref='list.details({itemId:$index})'>{{item.name}}</li>
+</ul>
+
+<ui-view></ui-view>

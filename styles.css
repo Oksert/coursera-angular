@@ -1,0 +1,12 @@
+.isActive {
+  color: red
+}
+
+.linkLike:hover {
+  color:blue;
+  -webkit-transform: scale(1.2);
+  font-size: 16px;
+}
+body {
+  margin: 40px;
+}
